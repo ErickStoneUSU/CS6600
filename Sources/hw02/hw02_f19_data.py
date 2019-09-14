@@ -12,7 +12,7 @@ X1 = np.array([[0, 0],
                [1, 1]])
 
 # Input Data for NOT
-X2 = np.array([[0, 0],
+X2 = np.array([[0, 1],
                [1, 1]])
 
 # Input Data for the boolean expression problem.
@@ -57,4 +57,18 @@ y_not = np.array([[1],
 
 # Ground truth for boolean expression.
 bool_exp = np.array([[1],
-                    [0]])
+                     [0],
+                     [0],
+                     [0],
+                     [1],
+                     [0],
+                     [0],
+                     [0],
+                     [1],
+                     [0],
+                     [0],
+                     [0],
+                     [1],
+                     [1],
+                     [1],
+                     [1]])
