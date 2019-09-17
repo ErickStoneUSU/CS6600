@@ -44,8 +44,8 @@ def build_484_nn():
     return build_nn_wmats((4, 8, 4))
 
 
-def build_4444_nn():
-    return build_nn_wmats((4, 4, 4, 4))
+def build_4884_nn():
+    return build_nn_wmats((4, 8, 8, 4))
 
 
 def sig(x):
@@ -115,58 +115,93 @@ def fit_3_layer_nn(x, wmats, thresh=0.4, thresh_flag=False):
 
 
 def fit_4_layer_nn(x, wmats, thresh=0.4, thresh_flag=False):
-    return fit_3_layer_nn(x, wmats, thresh=0.4, thresh_flag=False)
+    return fit_3_layer_nn(x, wmats, thresh, thresh_flag)
 
 
 # Remember to state in your comments the structure of each of your
 # ANNs (e.g., 2 x 3 x 1 or 2 x 4 x 4 x 1) and how many iterations
 # it took you to train it.
 
-save(train_3_layer_nn(5000, X1, y_and, build_231_nn), 'and_3_layer_ann.pck')
-save(train_3_layer_nn(5000, X1, y_or, build_231_nn), 'or_3_layer_ann.pck')
-save(train_3_layer_nn(5000, X1, y_xor, build_231_nn), 'xor_3_layer_ann.pck')
-save(train_3_layer_nn(5000, X2, y_not, build_231_nn), 'not_3_layer_ann.pck')
-save(train_3_layer_nn(5000, X4, bool_exp, build_484_nn), 'bool_3_layer_ann.pck')
-
-save(train_4_layer_nn(5000, X1, y_and, build_2441_nn), 'and_4_layer_ann.pck')
-save(train_4_layer_nn(5000, X1, y_or, build_2441_nn), 'or_4_layer_ann.pck')
-save(train_4_layer_nn(5000, X1, y_xor, build_2441_nn), 'xor_4_layer_ann.pck')
-save(train_4_layer_nn(5000, X2, y_not, build_2441_nn), 'not_4_layer_ann.pck')
-save(train_4_layer_nn(5000, X4, bool_exp, build_4444_nn), 'bool_4_layer_ann.pck')
+# save(train_3_layer_nn(5000, X1, y_and, build_231_nn), 'and_3_layer_ann.pck')
+# save(train_3_layer_nn(5000, X1, y_or, build_231_nn), 'or_3_layer_ann.pck')
+# save(train_3_layer_nn(5000, X1, y_xor, build_231_nn), 'xor_3_layer_ann.pck')
+# save(train_3_layer_nn(5000, X2, y_not, build_231_nn), 'not_3_layer_ann.pck')
+# save(train_3_layer_nn(5000, X4, bool_exp, build_484_nn), 'bool_3_layer_ann.pck')
+#
+# save(train_4_layer_nn(5000, X1, y_and, build_2441_nn), 'and_4_layer_ann.pck')
+# save(train_4_layer_nn(5000, X1, y_or, build_2441_nn), 'or_4_layer_ann.pck')
+# save(train_4_layer_nn(5000, X1, y_xor, build_2441_nn), 'xor_4_layer_ann.pck')
+# save(train_4_layer_nn(5000, X2, y_not, build_2441_nn), 'not_4_layer_ann.pck')
+# save(train_4_layer_nn(5000, X4, bool_exp, build_4884_nn), 'bool_4_layer_ann.pck')
 
 # Assert to verify the contents of each of the pickled files
-assert not fit_3_layer_nn(X1[0], load('and_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert not fit_3_layer_nn(X1[1], load('and_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert not fit_3_layer_nn(X1[2], load('and_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert fit_3_layer_nn(X1[3], load('and_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X1[0], load('and_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X1[1], load('and_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X1[2], load('and_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_3_layer_nn(X1[3], load('and_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+#
+# assert not fit_3_layer_nn(X1[0], load('or_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_3_layer_nn(X1[1], load('or_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_3_layer_nn(X1[2], load('or_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_3_layer_nn(X1[3], load('or_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+#
+# assert not fit_3_layer_nn(X1[0], load('xor_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_3_layer_nn(X1[1], load('xor_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_3_layer_nn(X1[2], load('xor_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X1[3], load('xor_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+#
+# assert fit_3_layer_nn(X2[0], load('not_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X2[1], load('not_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+#
+# assert fit_3_layer_nn(X4[0], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X4[1], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X4[2], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X4[3], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_3_layer_nn(X4[4], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X4[5], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X4[6], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X4[7], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_3_layer_nn(X4[8], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X4[9], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X4[10], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_3_layer_nn(X4[11], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_3_layer_nn(X4[12], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_3_layer_nn(X4[13], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_3_layer_nn(X4[14], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_3_layer_nn(X4[15], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
 
-assert not fit_3_layer_nn(X1[0], load('or_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert fit_3_layer_nn(X1[1], load('or_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert fit_3_layer_nn(X1[2], load('or_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert fit_3_layer_nn(X1[3], load('or_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-
-assert not fit_3_layer_nn(X1[0], load('xor_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert fit_3_layer_nn(X1[1], load('xor_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert fit_3_layer_nn(X1[2], load('xor_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert not fit_3_layer_nn(X1[3], load('xor_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-
-assert fit_3_layer_nn(X2[0], load('not_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert not fit_3_layer_nn(X2[1], load('not_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-
-assert fit_3_layer_nn(X4[0], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert not fit_3_layer_nn(X4[1], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert not fit_3_layer_nn(X4[2], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert not fit_3_layer_nn(X4[3], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert fit_3_layer_nn(X4[4], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert not fit_3_layer_nn(X4[5], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert not fit_3_layer_nn(X4[6], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert not fit_3_layer_nn(X4[7], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert fit_3_layer_nn(X4[8], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert not fit_3_layer_nn(X4[9], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert not fit_3_layer_nn(X4[10], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert not fit_3_layer_nn(X4[11], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert fit_3_layer_nn(X4[12], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert fit_3_layer_nn(X4[13], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert fit_3_layer_nn(X4[14], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-assert fit_3_layer_nn(X4[15], load('bool_3_layer_ann.pck'), thresh=0.59, thresh_flag=True)
-
+# Assert to verify the contents of each of the pickled files
+# assert not fit_4_layer_nn(X1[0], load('and_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_4_layer_nn(X1[1], load('and_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_4_layer_nn(X1[2], load('and_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_4_layer_nn(X1[3], load('and_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+#
+# assert not fit_4_layer_nn(X1[0], load('or_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_4_layer_nn(X1[1], load('or_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_4_layer_nn(X1[2], load('or_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_4_layer_nn(X1[3], load('or_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+#
+# assert not fit_4_layer_nn(X1[0], load('xor_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_4_layer_nn(X1[1], load('xor_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_4_layer_nn(X1[2], load('xor_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_4_layer_nn(X1[3], load('xor_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+#
+# assert fit_4_layer_nn(X2[0], load('not_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_4_layer_nn(X2[1], load('not_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+#
+# assert fit_4_layer_nn(X4[0], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_4_layer_nn(X4[1], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_4_layer_nn(X4[2], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_4_layer_nn(X4[3], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_4_layer_nn(X4[4], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_4_layer_nn(X4[5], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_4_layer_nn(X4[6], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_4_layer_nn(X4[7], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_4_layer_nn(X4[8], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_4_layer_nn(X4[9], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_4_layer_nn(X4[10], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert not fit_4_layer_nn(X4[11], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_4_layer_nn(X4[12], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_4_layer_nn(X4[13], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_4_layer_nn(X4[14], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)
+# assert fit_4_layer_nn(X4[15], load('bool_4_layer_ann.pck'), thresh=0.59, thresh_flag=True)

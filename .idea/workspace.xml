@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dea244da-8328-4cff-8cd1-8afe9606af83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/hw02/and_3_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/and_3_layer_ann.pck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/hw02/and_4_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/and_4_layer_ann.pck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/hw02/bool_3_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/bool_3_layer_ann.pck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/hw02/bool_4_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/bool_4_layer_ann.pck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/hw02/hw02_f19.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/hw02_f19.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw02/hw02_f19_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/hw02_f19_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/hw02/not_3_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/not_3_layer_ann.pck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/hw02/not_4_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/not_4_layer_ann.pck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/hw02/or_3_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/or_3_layer_ann.pck" afterDir="false" />
@@ -93,7 +93,7 @@
       <option name="presentableId" value="Default" />
       <updated>1568432002746</updated>
       <workItem from="1568432003863" duration="19543000" />
-      <workItem from="1568493499108" duration="8127000" />
+      <workItem from="1568493499108" duration="13032000" />
     </task>
     <servers />
   </component>
@@ -123,6 +123,6 @@
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CS6600$hw02_f19.coverage" NAME="hw02_f19 Coverage Results" MODIFIED="1568505134313" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw02" />
+    <SUITE FILE_PATH="coverage/CS6600$hw02_f19.coverage" NAME="hw02_f19 Coverage Results" MODIFIED="1568505841263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw02" />
   </component>
 </project>
