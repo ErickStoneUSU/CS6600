@@ -1,16 +1,17 @@
 #!/usr/bin/python
 
 
-import cPickle
+import pickle
 import gzip
 import numpy as np
 
-## To load raw data
-## >>> trd, vad, ted = load_data()
-## trd[0] are images
-## trd[1] are classifications
-## trd[0][0].shape --> (784,)
-## trd[1][0] --> 5
+
+# To load raw data
+# >>> trd, vad, ted = load_data()
+# trd[0] are images
+# trd[1] are classifications
+# trd[0][0].shape --> (784,)
+# trd[1][0] --> 5
 
 def load_data():
     """Return the MNIST data as a tuple containing the training data,
@@ -36,87 +37,88 @@ def load_data():
     below.
     """
     f = gzip.open('data/mnist.pkl.gz', 'rb')
-    training_data, validation_data, test_data = cPickle.load(f)
+    training_data, validation_data, test_data = pickle.load(f, encoding='latin1')
     f.close()
-    return (training_data, validation_data, test_data)
+    return training_data, validation_data, test_data
 
-## trd is the training data, vad is the validiation data,
-## ted is the test data.
-## trd consists of 50,000 images each of which has 784 pixels,
-## i.e., 28*28 = 784; trd[1] consists of 50,000 digits;
-## vad[0] consists of 10,000 images each of which has 784 pixels;
-## vad[1] has 10,000 digits. 
-## >>> trd, vad, ted = load_data()
-## >>> len(trd)
-## 2
-## >>> len(vad)
-## 2
-## >>> len(ted)
-## 2
-## >>> trd1, vad1, ted1 = load_data_wrapper()
-## >>> len(trd1)
-## 50000
-## trd[1][0] --> 5
-## trd1[0][1] --> array([[ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 1.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.]])
-## >>> trd[1][1]
-## 0
-## >>> trd1[1][1]
-## array([[ 1.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.]])
-## >>> trd[1][2]
-## 4
-## >>> trd1[2][1]
-## array([[ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 1.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.]])
-##>>> trd1[2][1]
-## array([[ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 1.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.]])
-##>>> trd[1][3]
-## 1
-##>>> trd1[3][1]
-## array([[ 0.],
-##       [ 1.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.]])
+
+# trd is the training data, vad is the validiation data,
+# ted is the test data.
+# trd consists of 50,000 images each of which has 784 pixels,
+# i.e., 28*28 = 784; trd[1] consists of 50,000 digits;
+# vad[0] consists of 10,000 images each of which has 784 pixels;
+# vad[1] has 10,000 digits. 
+# >>> trd, vad, ted = load_data()
+# >>> len(trd)
+# 2
+# >>> len(vad)
+# 2
+# >>> len(ted)
+# 2
+# >>> trd1, vad1, ted1 = load_data_wrapper()
+# >>> len(trd1)
+# 50000
+# trd[1][0] --> 5
+# trd1[0][1] --> array([[ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 1.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.]])
+# >>> trd[1][1]
+# 0
+# >>> trd1[1][1]
+# array([[ 1.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.]])
+# >>> trd[1][2]
+# 4
+# >>> trd1[2][1]
+# array([[ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 1.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.]])
+# >>> trd1[2][1]
+# array([[ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 1.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.]])
+# >>> trd[1][3]
+# 1
+# >>> trd1[3][1]
+# array([[ 0.],
+#       [ 1.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.]])
 
 def load_data_wrapper():
     """Return a tuple containing ``(training_data, validation_data,
@@ -142,24 +144,25 @@ def load_data_wrapper():
     tr_d, va_d, te_d = load_data()
     training_inputs = [np.reshape(x, (784, 1)) for x in tr_d[0]]
     training_results = [vectorized_result(y) for y in tr_d[1]]
-    training_data = zip(training_inputs, training_results)
+    training_data = list(zip(training_inputs, training_results))
     validation_inputs = [np.reshape(x, (784, 1)) for x in va_d[0]]
-    validation_data = zip(validation_inputs, va_d[1])
+    validation_data = list(zip(validation_inputs, va_d[1]))
     test_inputs = [np.reshape(x, (784, 1)) for x in te_d[0]]
-    test_data = zip(test_inputs, te_d[1])
+    test_data = list(zip(test_inputs, te_d[1]))
     return (training_data, validation_data, test_data)
 
-## >>> vectorized_result(5)
-##array([[ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 1.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.],
-##       [ 0.]])
+
+# >>> vectorized_result(5)
+# array([[ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 1.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.],
+#       [ 0.]])
 def vectorized_result(j):
     """Return a 10-dimensional unit vector with a 1.0 in the jth
     position and zeroes elsewhere.  This is used to convert a digit

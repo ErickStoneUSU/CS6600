@@ -2,24 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dea244da-8328-4cff-8cd1-8afe9606af83" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw02/and_3_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/and_3_layer_ann.pck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw02/and_4_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/and_4_layer_ann.pck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw02/bool_3_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/bool_3_layer_ann.pck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw02/bool_4_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/bool_4_layer_ann.pck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw02/hw02_f19.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/hw02_f19.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw02/not_3_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/not_3_layer_ann.pck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw02/not_4_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/not_4_layer_ann.pck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw02/or_3_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/or_3_layer_ann.pck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw02/or_4_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/or_4_layer_ann.pck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw02/xor_3_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/xor_3_layer_ann.pck" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw02/xor_4_layer_ann.pck" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw02/xor_4_layer_ann.pck" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/hw03/cs5600_6600_f19_hw03.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw03/cs5600_6600_f19_hw03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/hw03/mnist_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw03/mnist_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/hw03/network.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw03/network.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,6 +45,9 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -56,7 +66,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.cs5600_6600_f19_hw03">
+    <configuration name="cs5600_6600_f19_hw03" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CS6600" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sources/hw03" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sources/hw03/cs5600_6600_f19_hw03.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="hw02_f19" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CS6600" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -81,6 +113,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cs5600_6600_f19_hw03" />
         <item itemvalue="Python.hw02_f19" />
       </list>
     </recent_temporary>
@@ -94,6 +127,7 @@
       <updated>1568432002746</updated>
       <workItem from="1568432003863" duration="19543000" />
       <workItem from="1568493499108" duration="13032000" />
+      <workItem from="1568680760952" duration="32276000" />
     </task>
     <servers />
   </component>
@@ -105,7 +139,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -121,8 +157,15 @@
         </breakpoint>
       </default-breakpoints>
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="PythonConfigurationType">
+        <watch expression="training_data" />
+        <watch expression="files[1]" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/CS6600$cs5600_6600_f19_hw03.coverage" NAME="cs5600_6600_f19_hw03 Coverage Results" MODIFIED="1568827095638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw03" />
     <SUITE FILE_PATH="coverage/CS6600$hw02_f19.coverage" NAME="hw02_f19 Coverage Results" MODIFIED="1568505841263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw02" />
   </component>
 </project>
