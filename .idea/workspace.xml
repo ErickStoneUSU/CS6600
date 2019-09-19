@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dea244da-8328-4cff-8cd1-8afe9606af83" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/hw03/cs5600_6600_f19_hw03.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw03/cs5600_6600_f19_hw03.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw03/mnist_loader.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw03/mnist_loader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw03/network.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw03/network.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -127,7 +124,7 @@
       <updated>1568432002746</updated>
       <workItem from="1568432003863" duration="19543000" />
       <workItem from="1568493499108" duration="13032000" />
-      <workItem from="1568680760952" duration="32276000" />
+      <workItem from="1568680760952" duration="36400000" />
     </task>
     <servers />
   </component>
@@ -165,7 +162,7 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CS6600$cs5600_6600_f19_hw03.coverage" NAME="cs5600_6600_f19_hw03 Coverage Results" MODIFIED="1568827095638" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw03" />
+    <SUITE FILE_PATH="coverage/CS6600$cs5600_6600_f19_hw03.coverage" NAME="cs5600_6600_f19_hw03 Coverage Results" MODIFIED="1568840244425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw03" />
     <SUITE FILE_PATH="coverage/CS6600$hw02_f19.coverage" NAME="hw02_f19 Coverage Results" MODIFIED="1568505841263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw02" />
   </component>
 </project>
