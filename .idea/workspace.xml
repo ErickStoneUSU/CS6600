@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dea244da-8328-4cff-8cd1-8afe9606af83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sources/hw04/cs5600_6600_f19_hw04.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw04/cs5600_6600_f19_hw04.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw04/data/mnist.pkl.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw04/mnist_loader.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw04/network2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw04/network3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw04/output.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw03/cs5600_6600_f19_hw03.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw03/cs5600_6600_f19_hw03.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,10 +35,14 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QoLSatCXvIrnZuh8Zvw4XSvv8a" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/hw04" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -45,8 +55,12 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw04" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources" />
     </key>
@@ -63,7 +77,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.cs5600_6600_f19_hw03">
+  <component name="RunManager" selected="Python.cs5600_6600_f19_hw04">
     <configuration name="cs5600_6600_f19_hw03" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CS6600" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -80,6 +94,28 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sources/hw03/cs5600_6600_f19_hw03.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="cs5600_6600_f19_hw04" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CS6600" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="C:\Users\erick\AppData\Local\Programs\Python\Python37-32\python.exe" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sources/hw04" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sources/hw04/cs5600_6600_f19_hw04.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -108,8 +144,14 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Python.cs5600_6600_f19_hw03" />
+      <item itemvalue="Python.cs5600_6600_f19_hw04" />
+      <item itemvalue="Python.hw02_f19" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.cs5600_6600_f19_hw04" />
         <item itemvalue="Python.cs5600_6600_f19_hw03" />
         <item itemvalue="Python.hw02_f19" />
       </list>
@@ -125,6 +167,9 @@
       <workItem from="1568432003863" duration="19543000" />
       <workItem from="1568493499108" duration="13032000" />
       <workItem from="1568680760952" duration="36400000" />
+      <workItem from="1568863751794" duration="599000" />
+      <workItem from="1568864391938" duration="279000" />
+      <workItem from="1569292854476" duration="8179000" />
     </task>
     <servers />
   </component>
@@ -144,8 +189,23 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Sources/hw04/cs5600_6600_f19_hw04.py</url>
+          <line>458</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Sources/hw04/cs5600_6600_f19_hw04.py</url>
+          <line>381</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
           <properties notifyOnTerminate="true" exception="BaseException">
@@ -162,7 +222,8 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CS6600$cs5600_6600_f19_hw03.coverage" NAME="cs5600_6600_f19_hw03 Coverage Results" MODIFIED="1568840244425" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw03" />
+    <SUITE FILE_PATH="coverage/CS6600$cs5600_6600_f19_hw03.coverage" NAME="cs5600_6600_f19_hw03 Coverage Results" MODIFIED="1569295092210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw03" />
     <SUITE FILE_PATH="coverage/CS6600$hw02_f19.coverage" NAME="hw02_f19 Coverage Results" MODIFIED="1568505841263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw02" />
+    <SUITE FILE_PATH="coverage/CS6600$cs5600_6600_f19_hw04.coverage" NAME="cs5600_6600_f19_hw04 Coverage Results" MODIFIED="1569300834563" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw04" />
   </component>
 </project>
