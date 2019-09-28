@@ -15,6 +15,7 @@ import json
 import random
 import sys
 import pickle
+from multiprocessing import Pool
 
 sys.path.append('hw04')
 
@@ -140,6 +141,7 @@ class Network(object):
         n_train_data = len(training_data)
         evaluation_cost, evaluation_accuracy = [], []
         training_cost, training_accuracy = [], []
+        prev_accuracy = 0.0
         for j in range(epochs):
             random.shuffle(training_data)
             mini_batches = [
@@ -167,6 +169,17 @@ class Network(object):
                 evaluation_accuracy.append(accuracy / float(n_eval_data))
                 print("Accuracy on evaluation data: {} / {}".format(
                     self.accuracy(evaluation_data), n_eval_data))
+        #         r = self.accuracy(evaluation_data) / n_eval_data
+        #         # thresholded early stopping
+        #         if r > prev_accuracy:
+        #             if r - prev_accuracy < 0.01:
+        #                 break
+        #             prev_accuracy = self.accuracy(evaluation_data) / n_eval_data
+        # while len(evaluation_accuracy) < epochs:
+        #     evaluation_cost.append(0.0)
+        #     evaluation_accuracy.append(0.0)
+        #     training_cost.append(0.0)
+        #     training_accuracy.append(0.0)
         return evaluation_cost, evaluation_accuracy, \
                training_cost, training_accuracy
 
@@ -376,8 +389,8 @@ def plot_costs(eval_costs, train_costs, num_epochs):
 
     ax.set_xlabel('Epoch')
     ax.set_ylabel('Cost')
-    ax.plot(list(range(0,num_epochs)), y1, 'green')
-    ax.plot(list(range(0,num_epochs)), y2, 'blue')
+    ax.plot(list(range(0, num_epochs)), y1, 'green')
+    ax.plot(list(range(0, num_epochs)), y2, 'blue')
     plt.show()
     pass
 
@@ -390,8 +403,8 @@ def plot_accuracies(eval_accs, train_accs, num_epochs):
 
     ax.set_xlabel('Epoch')
     ax.set_ylabel('Cost')
-    ax.plot(list(range(0,num_epochs)), y1, 'green')
-    ax.plot(list(range(0,num_epochs)), y2, 'blue')
+    ax.plot(list(range(0, num_epochs)), y1, 'green')
+    ax.plot(list(range(0, num_epochs)), y2, 'blue')
     plt.show()
     pass
 
@@ -407,8 +420,17 @@ def collect_1_hidden_layer_net_stats(lower_num_hidden_nodes,
                                      lmbda,
                                      train_data,
                                      eval_data):
-    # your code here
-    pass
+    dict = {}
+    for i in range(lower_num_hidden_nodes, upper_num_hidden_nodes + 1):
+        dict[i] = Network(
+            [784, i, 10], cost=cost_function).SGD(
+            train_data, num_epochs, mbs, eta, lmbda=lmbda,
+            evaluation_data=eval_data,
+            monitor_evaluation_cost=True,
+            monitor_evaluation_accuracy=True,
+            monitor_training_cost=True,
+            monitor_training_accuracy=True)
+    return dict
 
 
 def collect_2_hidden_layer_net_stats(lower_num_hidden_nodes,
@@ -420,8 +442,18 @@ def collect_2_hidden_layer_net_stats(lower_num_hidden_nodes,
                                      lmbda,
                                      train_data,
                                      eval_data):
-    ## your code here
-    pass
+    dict = {}
+    for i in range(lower_num_hidden_nodes, upper_num_hidden_nodes + 1):
+        for j in range(lower_num_hidden_nodes, upper_num_hidden_nodes + 1):
+            dict[str(i) + '_' + str(j)] = Network(
+                [784, i, j, 10], cost=cost_function).SGD(
+                train_data, num_epochs, mbs, eta, lmbda=lmbda,
+                evaluation_data=eval_data,
+                monitor_evaluation_cost=True,
+                monitor_evaluation_accuracy=True,
+                monitor_training_cost=True,
+                monitor_training_accuracy=True)
+    return dict
 
 
 def collect_3_hidden_layer_net_stats(lower_num_hidden_nodes,
@@ -433,27 +465,77 @@ def collect_3_hidden_layer_net_stats(lower_num_hidden_nodes,
                                      lmbda,
                                      train_data,
                                      eval_data):
-    ## your code here
+    dict = {}
+    for i in range(lower_num_hidden_nodes, upper_num_hidden_nodes + 1):
+        for j in range(lower_num_hidden_nodes, upper_num_hidden_nodes + 1):
+            for k in range(lower_num_hidden_nodes, upper_num_hidden_nodes + 1):
+                dict[str(i) + '_' + str(j) + '_' + str(k)] = Network(
+                    [784, i, j, 10], cost=cost_function).SGD(
+                    train_data, num_epochs, mbs, eta, lmbda=lmbda,
+                    evaluation_data=eval_data,
+                    monitor_evaluation_cost=True,
+                    monitor_evaluation_accuracy=True,
+                    monitor_training_cost=True,
+                    monitor_training_accuracy=True)
+    return dict
     pass
 
 
-# train_d, valid_d, test_d = ml.load_data_wrapper()
-# len(train_d)
-# len(valid_d)
-# len(test_d)
-# net = Network([784, 30, 10], cost=CrossEntropyCost)
-# net_stats = net.SGD(train_d, 2, 10, 0.5, lmbda=5.0,
-#                     evaluation_data=valid_d,
-#                     monitor_evaluation_cost=True,
-#                     monitor_evaluation_accuracy=True,
-#                     monitor_training_cost=True,
-#                     monitor_training_accuracy=True)
-#
-# with open('output.txt', 'wb') as f:
-#     pickle.dump(net_stats, f)
+train_d, valid_d, test_d = ml.load_data_wrapper()
+len(train_d)
+len(valid_d)
+len(test_d)
 
-with open('output.txt', 'rb') as f:
-    net_stats2 = pickle.load(f)
+if __name__ == '__main__':
+    net1 = Network([784, 71, 10], cost=CrossEntropyCost)
+    net2 = Network([784, 99, 99, 10], cost=CrossEntropyCost)
+    net3 = Network([784, 99, 99, 99, 10], cost=CrossEntropyCost)
 
-plot_costs(net_stats2[0], net_stats2[2], 2)
-print('done')
+    net1.SGD(train_d, 30, 10, 0.25, lmbda=0.5,
+             evaluation_data=valid_d,
+             monitor_evaluation_cost=True,
+             monitor_evaluation_accuracy=True,
+             monitor_training_cost=True,
+             monitor_training_accuracy=True)
+
+    net2.SGD(train_d, 30, 10, 0.5, lmbda=0.5,
+             evaluation_data=valid_d,
+             monitor_evaluation_cost=True,
+             monitor_evaluation_accuracy=True,
+             monitor_training_cost=True,
+             monitor_training_accuracy=True)
+
+    net3.SGD(train_d, 30, 10, 0.4, lmbda=0.4,
+             evaluation_data=valid_d,
+             monitor_evaluation_cost=True,
+             monitor_evaluation_accuracy=True,
+             monitor_training_cost=True,
+             monitor_training_accuracy=True)
+
+    with open('net1.pck', 'wb') as f:
+        pickle.dump(net1, f)
+
+    with open('net2.pck', 'wb') as f:
+        pickle.dump(net2, f)
+
+    with open('net3.pck', 'wb') as f:
+        pickle.dump(net3, f)
+
+#### COMMENTS:
+# Network 1 performance:
+# Cost on training data: 0.23366812190283776
+# Accuracy on training data: 49695 / 50000
+# Cost on evaluation data: 1.0814890753787079
+# Accuracy on evaluation data: 9647 / 10000
+
+# Network 2 performance:
+# Cost on training data: 0.1928469441493975
+# Accuracy on training data: 49725 / 50000
+# Cost on evaluation data: 0.9902834236675866
+# Accuracy on evaluation data: 9695 / 10000
+
+# Network 3 performance:
+# Cost on training data: 0.24608339408300342
+# Accuracy on training data: 49681 / 50000
+# Cost on evaluation data: 1.2828853347872249
+# Accuracy on evaluation data: 9670 / 10000
