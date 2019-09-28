@@ -478,48 +478,47 @@ def collect_3_hidden_layer_net_stats(lower_num_hidden_nodes,
                     monitor_training_cost=True,
                     monitor_training_accuracy=True)
     return dict
-    pass
 
 
-train_d, valid_d, test_d = ml.load_data_wrapper()
-len(train_d)
-len(valid_d)
-len(test_d)
-
-if __name__ == '__main__':
-    net1 = Network([784, 71, 10], cost=CrossEntropyCost)
-    net2 = Network([784, 99, 99, 10], cost=CrossEntropyCost)
-    net3 = Network([784, 99, 99, 99, 10], cost=CrossEntropyCost)
-
-    net1.SGD(train_d, 30, 10, 0.25, lmbda=0.5,
-             evaluation_data=valid_d,
-             monitor_evaluation_cost=True,
-             monitor_evaluation_accuracy=True,
-             monitor_training_cost=True,
-             monitor_training_accuracy=True)
-
-    net2.SGD(train_d, 30, 10, 0.5, lmbda=0.5,
-             evaluation_data=valid_d,
-             monitor_evaluation_cost=True,
-             monitor_evaluation_accuracy=True,
-             monitor_training_cost=True,
-             monitor_training_accuracy=True)
-
-    net3.SGD(train_d, 30, 10, 0.4, lmbda=0.4,
-             evaluation_data=valid_d,
-             monitor_evaluation_cost=True,
-             monitor_evaluation_accuracy=True,
-             monitor_training_cost=True,
-             monitor_training_accuracy=True)
-
-    with open('net1.pck', 'wb') as f:
-        pickle.dump(net1, f)
-
-    with open('net2.pck', 'wb') as f:
-        pickle.dump(net2, f)
-
-    with open('net3.pck', 'wb') as f:
-        pickle.dump(net3, f)
+# train_d, valid_d, test_d = ml.load_data_wrapper()
+# len(train_d)
+# len(valid_d)
+# len(test_d)
+#
+# if __name__ == '__main__':
+#     net1 = Network([784, 71, 10], cost=CrossEntropyCost)
+#     net2 = Network([784, 99, 99, 10], cost=CrossEntropyCost)
+#     net3 = Network([784, 99, 99, 99, 10], cost=CrossEntropyCost)
+#
+#     net1.SGD(train_d, 30, 10, 0.25, lmbda=0.5,
+#              evaluation_data=valid_d,
+#              monitor_evaluation_cost=True,
+#              monitor_evaluation_accuracy=True,
+#              monitor_training_cost=True,
+#              monitor_training_accuracy=True)
+#
+#     net2.SGD(train_d, 30, 10, 0.5, lmbda=0.5,
+#              evaluation_data=valid_d,
+#              monitor_evaluation_cost=True,
+#              monitor_evaluation_accuracy=True,
+#              monitor_training_cost=True,
+#              monitor_training_accuracy=True)
+#
+#     net3.SGD(train_d, 30, 10, 0.4, lmbda=0.4,
+#              evaluation_data=valid_d,
+#              monitor_evaluation_cost=True,
+#              monitor_evaluation_accuracy=True,
+#              monitor_training_cost=True,
+#              monitor_training_accuracy=True)
+#
+#     with open('net1.pck', 'wb') as f:
+#         pickle.dump(net1, f)
+#
+#     with open('net2.pck', 'wb') as f:
+#         pickle.dump(net2, f)
+#
+#     with open('net3.pck', 'wb') as f:
+#         pickle.dump(net3, f)
 
 #### COMMENTS:
 # Network 1 performance:

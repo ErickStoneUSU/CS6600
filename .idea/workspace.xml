@@ -2,12 +2,56 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dea244da-8328-4cff-8cd1-8afe9606af83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sources/hw04/net1.pck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw04/net2.pck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw04/net3.pck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw04/output_big.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/.idea/CS6600.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/.idea/other.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/McCulloch.and.Pitts.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/cs5600_6600_f19_hw01.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/hmwk1_CS_6600.rtf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/hw01.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/hw01/McCulloch.and.Pitts.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/hw01/cs5600_6600_f19_hw01.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/hw01/logical_perceptrons.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/logical_perceptrons.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/mcculloch_and_pitts_paper.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/Scripts/Activate.ps1" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/Scripts/activate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/Scripts/activate.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/Scripts/deactivate.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/Scripts/python.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/Scripts/pythonw.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/pyvenv.cfg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw04/Submission/net.zip" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw04/Submission/net1.pck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw04/Submission/net2.pck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw04/Submission/net3.pck" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw04/cs5600_6600_f19_hw04.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw04/cs5600_6600_f19_hw04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/.idea/CS6600.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/.idea/other.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/McCulloch.and.Pitts.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/cs5600_6600_f19_hw01.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/hmwk1_CS_6600.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/hw01.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/hw01/McCulloch.and.Pitts.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/hw01/cs5600_6600_f19_hw01.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/hw01/logical_perceptrons.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/logical_perceptrons.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/mcculloch_and_pitts_paper.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/Scripts/Activate.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/Scripts/activate" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/Scripts/activate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/Scripts/deactivate.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/Scripts/python.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/Scripts/pythonw.exe" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/pyvenv.cfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/hw04/cs5600_6600_f19_hw04.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw04/Submission/cs5600_6600_f19_hw04.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,6 +73,13 @@
     <expand />
     <select />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -40,7 +91,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/hw04" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/hw04/Submission" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,9 +108,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw04\Submission" />
       <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw04" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw04\Submission" />
       <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources" />
     </key>
   </component>
@@ -108,7 +161,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sources/hw04/cs5600_6600_f19_hw04.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw04\Submission\cs5600_6600_f19_hw04.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -164,7 +217,7 @@
       <workItem from="1568680760952" duration="36400000" />
       <workItem from="1568863751794" duration="599000" />
       <workItem from="1568864391938" duration="279000" />
-      <workItem from="1569292854476" duration="39921000" />
+      <workItem from="1569292854476" duration="40185000" />
     </task>
     <servers />
   </component>
@@ -191,7 +244,7 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Sources/hw04/cs5600_6600_f19_hw04.py</url>
+          <url>file://$PROJECT_DIR$/Sources/hw04/Submission/cs5600_6600_f19_hw04.py</url>
           <line>394</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
