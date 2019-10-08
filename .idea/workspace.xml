@@ -2,56 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dea244da-8328-4cff-8cd1-8afe9606af83" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/.idea/$PRODUCT_WORKSPACE_FILE$" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/.idea/CS6600.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/.idea/other.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/McCulloch.and.Pitts.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/cs5600_6600_f19_hw01.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/hmwk1_CS_6600.rtf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/hw01.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/hw01/McCulloch.and.Pitts.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/hw01/cs5600_6600_f19_hw01.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/hw01/logical_perceptrons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/logical_perceptrons.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/mcculloch_and_pitts_paper.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/Scripts/Activate.ps1" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/Scripts/activate" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/Scripts/activate.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/Scripts/deactivate.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/Scripts/python.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/Scripts/pythonw.exe" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw01/venv/pyvenv.cfg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw04/Submission/net.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw04/Submission/net1.pck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw04/Submission/net2.pck" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Sources/hw04/Submission/net3.pck" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw05/DeepNetsAreEasilyFooled.odt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw05/DeepNetsAreEasilyFooled.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw05/Imagenet-classification-with-deep-convolutional-neural-networks.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw05/cs5600_6600_f19_hw05.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/cs5600_6600_f19_hw06.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/mnist_convnet/mnist_convnet_1.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/mnist_convnet/mnist_convnet_2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/mnist_convnet/mnist_convnet_3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/mnist_convnet/mnist_convnet_4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/mnist_convnet/mnist_convnet_5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/mnist_convnet/test_mnist_convnets.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/mountain_car/MCar.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/mountain_car/Memory.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/mountain_car/Model.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/tf01.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/tf02.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/tf03.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/tf04.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/.idea/$PRODUCT_WORKSPACE_FILE$" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/.idea/CS6600.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/.idea/other.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/McCulloch.and.Pitts.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/cs5600_6600_f19_hw01.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/hmwk1_CS_6600.rtf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/hw01.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/hw01/McCulloch.and.Pitts.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/hw01/cs5600_6600_f19_hw01.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/hw01/logical_perceptrons.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/logical_perceptrons.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/mcculloch_and_pitts_paper.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/Scripts/Activate.ps1" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/Scripts/activate" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/Scripts/activate.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/Scripts/deactivate.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/Scripts/python.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/Scripts/pythonw.exe" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/HW1/venv/pyvenv.cfg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Sources/hw04/cs5600_6600_f19_hw04.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw04/Submission/cs5600_6600_f19_hw04.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/hw04/Submission/net.zip" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -155,6 +125,9 @@
       <module name="CS6600" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="C:\Users\erick\AppData\Local\Programs\Python\Python37-32\python.exe" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sources/hw04" />
       <option name="IS_MODULE_SDK" value="false" />
@@ -217,7 +190,9 @@
       <workItem from="1568680760952" duration="36400000" />
       <workItem from="1568863751794" duration="599000" />
       <workItem from="1568864391938" duration="279000" />
-      <workItem from="1569292854476" duration="40185000" />
+      <workItem from="1569292854476" duration="40497000" />
+      <workItem from="1570075414945" duration="22000" />
+      <workItem from="1570075489857" duration="761000" />
     </task>
     <servers />
   </component>
