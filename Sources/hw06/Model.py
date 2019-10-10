@@ -22,18 +22,43 @@ class Model:
         self._define_model()
         
     def _define_model(self):
-        self._define_model_1()
+        self._define_model_2()
 
     def _define_model_1(self):
         self._states = tf.placeholder(shape=[None, self._num_states],
                                       dtype=tf.float32)
-        ## This is the Q(s, a) table.
-        ## The number of columns is determined by the input fed to it
-        ## The number of actions is 3. So, the size of _q_s_a is ? x 3,
-        ## because there are 3 actions in the game.
         self._q_s_a = tf.placeholder(shape=[None, self._num_actions],
                                      dtype=tf.float32)
-        # create two fully connected hidden layers
+        self._fc1 = tf.layers.dense(self._states, 50, activation=tf.nn.relu)
+        self._fc2 = tf.layers.dense(self._fc1, 50, activation=tf.nn.relu)
+        self._fc3 = tf.layers.dense(self._fc2, 50, activation=tf.nn.relu)
+        self._r1 = tf.math.round(self._fc3, 2)
+        self._logits = tf.layers.dense(self._r1, self._num_actions)
+        loss = tf.losses.mean_squared_error(self._q_s_a, self._logits)
+        self._optimizer = tf.train.AdamOptimizer().minimize(loss)
+        self._var_init = tf.global_variables_initializer()
+
+    def _define_model_2(self):
+        self._states = tf.placeholder(shape=[None, self._num_states],
+                                      dtype=tf.float32)
+        self._q_s_a = tf.placeholder(shape=[None, self._num_actions],
+                                     dtype=tf.float32)
+        self._fc1 = tf.layers.dense(self._states, 100, activation=tf.nn.relu)
+        # self._fc2 = tf.layers.dense(self._fc1, 500, activation=tf.nn.relu)
+        # self._fc3 = tf.layers.dense(self._fc2, 500, activation=tf.nn.relu)
+        self._o1 = tf.math.multiply(self._fc1, 10)
+        self._o2 = tf.math.round(self._o1)
+        self._o3 = tf.math.divide(self._o2, 10)
+        self._logits = tf.layers.dense(self._o3, self._num_actions)
+        loss = tf.losses.mean_squared_error(self._q_s_a, self._logits)
+        self._optimizer = tf.train.AdamOptimizer().minimize(loss)
+        self._var_init = tf.global_variables_initializer()
+
+    def _define_model_3(self):
+        self._states = tf.placeholder(shape=[None, self._num_states],
+                                      dtype=tf.float32)
+        self._q_s_a = tf.placeholder(shape=[None, self._num_actions],
+                                     dtype=tf.float32)
         self._fc1 = tf.layers.dense(self._states, 50, activation=tf.nn.relu)
         self._fc2 = tf.layers.dense(self._fc1, 50, activation=tf.nn.relu)
         self._logits = tf.layers.dense(self._fc2, self._num_actions)
@@ -41,18 +66,30 @@ class Model:
         self._optimizer = tf.train.AdamOptimizer().minimize(loss)
         self._var_init = tf.global_variables_initializer()
 
-    def _define_model_2(self):
-        ## your code here.
-
-    def _define_model_3(self):
-        ## your code here.
-
     def _define_model_4(self):
-        ## your code here.
+        self._states = tf.placeholder(shape=[None, self._num_states],
+                                      dtype=tf.float32)
+        self._q_s_a = tf.placeholder(shape=[None, self._num_actions],
+                                     dtype=tf.float32)
+        self._fc1 = tf.layers.dense(self._states, 50, activation=tf.nn.relu)
+        self._fc2 = tf.layers.dense(self._fc1, 50, activation=tf.nn.relu)
+        self._logits = tf.layers.dense(self._fc2, self._num_actions)
+        loss = tf.losses.mean_squared_error(self._q_s_a, self._logits)
+        self._optimizer = tf.train.AdamOptimizer().minimize(loss)
+        self._var_init = tf.global_variables_initializer()
 
     def _define_model_5(self):
-        ## your code here.
-    
+        self._states = tf.placeholder(shape=[None, self._num_states],
+                                      dtype=tf.float32)
+        self._q_s_a = tf.placeholder(shape=[None, self._num_actions],
+                                     dtype=tf.float32)
+        self._fc1 = tf.layers.dense(self._states, 50, activation=tf.nn.relu)
+        self._fc2 = tf.layers.dense(self._fc1, 50, activation=tf.nn.relu)
+        self._logits = tf.layers.dense(self._fc2, self._num_actions)
+        loss = tf.losses.mean_squared_error(self._q_s_a, self._logits)
+        self._optimizer = tf.train.AdamOptimizer().minimize(loss)
+        self._var_init = tf.global_variables_initializer()
+
     # take a state and a session and use the network to predict
     # the next state. state is a vector of 2 floats, e.g., [-0.61506952 -0.00476815].
     def predict_one(self, state, sess):

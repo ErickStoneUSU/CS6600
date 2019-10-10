@@ -1,6 +1,6 @@
 import gym
-from Model import Model
-from Memory import Memory
+from hw06.Model import Model
+from hw06.Memory import Memory
 
 import numpy as np
 import tensorflow as tf

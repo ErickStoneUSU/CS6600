@@ -126,9 +126,10 @@ def test_20(valid_x, valid_y, model, full=False):
 
 
 def test_model(tfl, loader):
-    model = loader(tfl)
-    test_20(valid_x, valid_y, model, True)
-    # print('ConvNet '+num+' accuracy = {}'.format(test_tflearn_convnet_model(model, valid_x, valid_y)))
+    with tensorflow.Graph().as_default():
+        model = loader(tfl)
+        #test_20(valid_x, valid_y, model, True)
+        print('ConvNet accuracy = {}'.format(test_tflearn_convnet_model(model, valid_x, valid_y)))
 
 
 train_x, train_y, test_x, test_y, valid_x, valid_y = get_data()
@@ -140,8 +141,8 @@ times.append(start_up_model(build=build_tflearn_convnet_3, run_id='MNIST_ConvNet
 times.append(start_up_model(build=build_tflearn_convnet_4, run_id='MNIST_ConvNet_4', num='4'))
 times.append(start_up_model(build=build_tflearn_convnet_5, run_id='MNIST_ConvNet_5', num='5'))
 print(times)
-# test_model('/data/hw06_my_net_01.tfl', load_mnist_convnet_1)
-# test_model('/data/hw06_my_net_02.tfl', load_mnist_convnet_2)
-# test_model('/data/hw06_my_net_03.tfl', load_mnist_convnet_3)
-# test_model('/data/hw06_my_net_04.tfl', load_mnist_convnet_4)
-# test_model('/data/hw06_my_net_05.tfl', load_mnist_convnet_5)
+test_model('/data/hw06_my_net_01.tfl', load_mnist_convnet_1)
+test_model('/data/hw06_my_net_02.tfl', load_mnist_convnet_2)
+test_model('/data/hw06_my_net_03.tfl', load_mnist_convnet_3)
+test_model('/data/hw06_my_net_04.tfl', load_mnist_convnet_4)
+test_model('/data/hw06_my_net_05.tfl', load_mnist_convnet_5)
