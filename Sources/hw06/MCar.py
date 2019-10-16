@@ -7,12 +7,14 @@ import tensorflow as tf
 import matplotlib.pylab as plt
 import random
 import math
+import os.path
 
 MAX_EPSILON = 1
 MIN_EPSILON = 0.01
 LAMBDA = 0.0001
 GAMMA = 0.99
 BATCH_SIZE = 50
+
 
 class MCar:
     def __init__(self, sess, model, env, memory, max_eps, min_eps,
@@ -37,7 +39,7 @@ class MCar:
         while True:
             if self._render:
                 self._env.render()
-                
+
             action = self._choose_action(state)
             # a call to the environment self._env.step(action) returns four elements:
             # next_state - this is a 1D numpy array (numpy.ndarray), e.g., [-0.531827   -0.00216068];
@@ -98,7 +100,7 @@ class MCar:
         while True:
             if self._render:
                 self._env.render()
-                
+
             action = self._play_choose_action(state)
 
             next_state, reward, done, info = self._env.step(action)
@@ -112,7 +114,7 @@ class MCar:
 
             # exponentially decay the eps value
             self._steps += 1
-            #self._eps = MIN_EPSILON + (MAX_EPSILON - MIN_EPSILON) \
+            # self._eps = MIN_EPSILON + (MAX_EPSILON - MIN_EPSILON) \
             #            * math.exp(-LAMBDA * self._steps)
 
             # move the agent to the next state and accumulate the reward
@@ -147,7 +149,7 @@ class MCar:
         # where the 1st element is a state, the second is action, the third is reward,
         # and the fourth is next_state.
         batch = self._memory.sample(self._model.batch_size)
-        #print('len of batch = ' + str(len(batch)))
+        # print('len of batch = ' + str(len(batch)))
         # collect all states in batch. states will be an array of 2-toops:
         # states=[[-5.20062426e-01 -2.31394437e-03],
         #         [-5.58174462e-01 -4.54577626e-03],
@@ -178,7 +180,7 @@ class MCar:
             # current_q is of the form [-50.88421, -51.148014, -50.96282], where the 0th value
             # is the reward for action 0, the 1st value is the reward for action 1, and the
             # 2nd value is the reward for action 2.
-            current_q = q_s_a[i]
+            current_q = np.round(q_s_a[i], 2)
             # update the q value for action
             if next_state is None:
                 # in this case, the game completed after action, so there is no max Q(s',a')
@@ -225,23 +227,24 @@ def train_mcar():
     mem = Memory(50000)
 
     with tf.Session() as sess:
+        saver = tf.train.Saver()
         sess.run(model.var_init)
         mc = MCar(sess, model, env, mem, MAX_EPSILON, MIN_EPSILON, LAMBDA)
         # change the number of episodes as needed
-        num_episodes = 10
+        num_episodes = 300
         cnt = 0
         while cnt < num_episodes:
             if cnt % 10 == 0:
-                print('Episode {} of {}'.format(cnt+1, num_episodes))
+                print('Episode {} of {}'.format(cnt + 1, num_episodes))
             mc.run()
             cnt += 1
-            
+        saver.save(sess, './data/model_' + str(model.num))
         plt.plot(mc.reward_store)
         plt.show()
         plt.close("all")
         plt.plot(mc.max_x_store)
         plt.show()
 
+
 if __name__ == '__main__':
     train_mcar()
-    

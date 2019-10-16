@@ -2,6 +2,7 @@ import tensorflow as tf
 
 ## In the mountain car game, the number of states is 2 (position, velocity) and
 ## num of actions is 3 (push left, no push, push right).
+from tflearn import DNN
 
 class Model:
     def __init__(self, num_states, num_actions, batch_size):
@@ -11,20 +12,21 @@ class Model:
         # define the placeholders
         self._states = None
         self._actions = None
-        # the output operations
-        self._logits = None # this is the output of an ANN.
+        # the output operations       self._logits = None # this is the output of an ANN.
         self._optimizer = None
         self._var_init = None
         self._fc1 = None
         self._fc2 = None
         self._fc3 = None
+        self.num = 0
         # now setup the model
         self._define_model()
         
     def _define_model(self):
-        self._define_model_2()
+        self._define_model_5()
 
     def _define_model_1(self):
+        self.num = 1
         self._states = tf.placeholder(shape=[None, self._num_states],
                                       dtype=tf.float32)
         self._q_s_a = tf.placeholder(shape=[None, self._num_actions],
@@ -38,54 +40,59 @@ class Model:
         self._optimizer = tf.train.AdamOptimizer().minimize(loss)
         self._var_init = tf.global_variables_initializer()
 
+
     def _define_model_2(self):
+        self.num = 2
         self._states = tf.placeholder(shape=[None, self._num_states],
                                       dtype=tf.float32)
         self._q_s_a = tf.placeholder(shape=[None, self._num_actions],
                                      dtype=tf.float32)
-        self._fc1 = tf.layers.dense(self._states, 100, activation=tf.nn.relu)
-        # self._fc2 = tf.layers.dense(self._fc1, 500, activation=tf.nn.relu)
-        # self._fc3 = tf.layers.dense(self._fc2, 500, activation=tf.nn.relu)
-        self._o1 = tf.math.multiply(self._fc1, 10)
-        self._o2 = tf.math.round(self._o1)
-        self._o3 = tf.math.divide(self._o2, 10)
-        self._logits = tf.layers.dense(self._o3, self._num_actions)
+        self._fc1 = tf.layers.dense(self._states, 512, activation=tf.nn.relu)
+        self._fc2 = tf.layers.dense(self._fc1, 512, activation=tf.nn.relu)
+        self._fc3 = tf.layers.dense(self._fc2, 512, activation=tf.nn.relu)
+        self._logits = tf.layers.dense(self._fc3, self._num_actions)
         loss = tf.losses.mean_squared_error(self._q_s_a, self._logits)
         self._optimizer = tf.train.AdamOptimizer().minimize(loss)
         self._var_init = tf.global_variables_initializer()
 
     def _define_model_3(self):
+        self.num = 3
         self._states = tf.placeholder(shape=[None, self._num_states],
                                       dtype=tf.float32)
         self._q_s_a = tf.placeholder(shape=[None, self._num_actions],
                                      dtype=tf.float32)
-        self._fc1 = tf.layers.dense(self._states, 50, activation=tf.nn.relu)
-        self._fc2 = tf.layers.dense(self._fc1, 50, activation=tf.nn.relu)
-        self._logits = tf.layers.dense(self._fc2, self._num_actions)
+        self._fc1 = tf.layers.dense(self._states, 256, activation=tf.nn.relu)
+        self._fc2 = tf.layers.dense(self._fc1, 512, activation=tf.nn.relu)
+        self._fc3 = tf.layers.dense(self._fc2, 1024, activation=tf.nn.relu)
+        self._logits = tf.layers.dense(self._fc3, self._num_actions)
         loss = tf.losses.mean_squared_error(self._q_s_a, self._logits)
         self._optimizer = tf.train.AdamOptimizer().minimize(loss)
         self._var_init = tf.global_variables_initializer()
 
     def _define_model_4(self):
+        self.num = 4
         self._states = tf.placeholder(shape=[None, self._num_states],
                                       dtype=tf.float32)
         self._q_s_a = tf.placeholder(shape=[None, self._num_actions],
                                      dtype=tf.float32)
-        self._fc1 = tf.layers.dense(self._states, 50, activation=tf.nn.relu)
-        self._fc2 = tf.layers.dense(self._fc1, 50, activation=tf.nn.relu)
-        self._logits = tf.layers.dense(self._fc2, self._num_actions)
+        self._fc1 = tf.layers.dense(self._states, 1024, activation=tf.nn.relu)
+        self._fc2 = tf.layers.dense(self._fc1, 512, activation=tf.nn.relu)
+        self._fc3 = tf.layers.dense(self._fc2, 256, activation=tf.nn.relu)
+        self._logits = tf.layers.dense(self._fc3, self._num_actions)
         loss = tf.losses.mean_squared_error(self._q_s_a, self._logits)
         self._optimizer = tf.train.AdamOptimizer().minimize(loss)
         self._var_init = tf.global_variables_initializer()
 
     def _define_model_5(self):
+        self.num = 5
         self._states = tf.placeholder(shape=[None, self._num_states],
                                       dtype=tf.float32)
         self._q_s_a = tf.placeholder(shape=[None, self._num_actions],
                                      dtype=tf.float32)
-        self._fc1 = tf.layers.dense(self._states, 50, activation=tf.nn.relu)
-        self._fc2 = tf.layers.dense(self._fc1, 50, activation=tf.nn.relu)
-        self._logits = tf.layers.dense(self._fc2, self._num_actions)
+        self._fc1 = tf.layers.dense(self._states, 512, activation=tf.nn.relu)
+        self._fc2 = tf.layers.dense(self._fc1, 256, activation=tf.nn.relu)
+        self._fc3 = tf.layers.dense(self._fc2, 512, activation=tf.nn.relu)
+        self._logits = tf.layers.dense(self._fc3, self._num_actions)
         loss = tf.losses.mean_squared_error(self._q_s_a, self._logits)
         self._optimizer = tf.train.AdamOptimizer().minimize(loss)
         self._var_init = tf.global_variables_initializer()

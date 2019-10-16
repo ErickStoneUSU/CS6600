@@ -2,7 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dea244da-8328-4cff-8cd1-8afe9606af83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/acc_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/acc_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/acc_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/acc_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/checkpoint" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/model_2.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/model_2.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/model_2.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/model_3.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/model_3.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/model_3.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/model_4.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/model_4.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/model_4.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/model_5.data-00000-of-00001" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/model_5.index" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/model_5.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/reward_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/reward_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/reward_4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/data/reward_5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/hw06_report.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw06/report.odt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw07/Neural_Architecture_Search_with_RL.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw07/cs5600_6600_f19_hw07.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw07/data/mnist.pkl.gz" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw07/mnist_digits_random_forest.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Sources/hw07/mnist_loader.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/hw06/MCar.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw06/MCar.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Sources/hw06/Model.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/hw06/Model.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,22 +55,6 @@
     <expand />
     <select />
   </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Sources/hw06/test_mnist_convnets.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-              <folding>
-                <element signature="e#192#205#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -50,41 +65,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1545" />
-    <option name="y" value="1326" />
-    <option name="width" value="1455" />
-    <option name="height" value="1170" />
-  </component>
   <component name="ProjectId" id="1QoLSatCXvIrnZuh8Zvw4XSvv8a" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="CS6600" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS6600" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Sources/hw07" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -94,23 +83,24 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="SDKs" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="PyScientificConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw07" />
+      <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw04\Submission" />
+      <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw04" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw06" />
       <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw06\" />
       <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw06\mnist_convnet" />
       <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw04\Submission" />
       <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw04\Submission" />
-      <recent name="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw04" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -125,7 +115,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.test_mnist_convnets">
+  <component name="RunManager" selected="Python.mnist_digits_random_forest">
+    <configuration name="MCar" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CS6600" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sources/hw06" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sources/hw06/MCar.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration default="true" type="PythonConfigurationType" factoryName="Python">
       <module name="CS6600" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -142,50 +154,6 @@
       <option name="SCRIPT_NAME" value="" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="cs5600_6600_f19_hw03" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CS6600" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sources/hw03" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sources/hw03/cs5600_6600_f19_hw03.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="cs5600_6600_f19_hw04" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="CS6600" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="C:\Users\erick\AppData\Local\Programs\Python\Python37-32\python.exe" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sources/hw04" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="C:\Users\erick\OneDrive\Desktop\CS6600\Sources\hw04\Submission\cs5600_6600_f19_hw04.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -236,6 +204,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="mnist_digits_random_forest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="CS6600" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sources/hw07" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Sources/hw07/mnist_digits_random_forest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="test_mnist_convnets" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="CS6600" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -259,19 +246,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.cs5600_6600_f19_hw03" />
-      <item itemvalue="Python.cs5600_6600_f19_hw04" />
       <item itemvalue="Python.mnist_convnet_1" />
       <item itemvalue="Python.mnist_convnet_1 (1)" />
       <item itemvalue="Python.test_mnist_convnets" />
+      <item itemvalue="Python.MCar" />
+      <item itemvalue="Python.mnist_digits_random_forest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.mnist_digits_random_forest" />
+        <item itemvalue="Python.MCar" />
         <item itemvalue="Python.test_mnist_convnets" />
         <item itemvalue="Python.mnist_convnet_1 (1)" />
         <item itemvalue="Python.mnist_convnet_1" />
-        <item itemvalue="Python.cs5600_6600_f19_hw04" />
-        <item itemvalue="Python.cs5600_6600_f19_hw03" />
       </list>
     </recent_temporary>
   </component>
@@ -302,47 +289,12 @@
       <workItem from="1570513380577" duration="821000" />
       <workItem from="1570515462073" duration="17109000" />
       <workItem from="1570636665182" duration="1012000" />
+      <workItem from="1570672783974" duration="4178000" />
+      <workItem from="1570749624532" duration="24664000" />
+      <workItem from="1570997526919" duration="2667000" />
+      <workItem from="1571186649329" duration="7459000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1012000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-1927" y="1329" width="1550" height="934" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24966443" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Dilbert" />
-      <window_info anchor="bottom" id="SBT Console" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Docker" />
-      <window_info anchor="bottom" id="Dependency Graph" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="RNConsole" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="SBT Execute" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="SciView" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -353,12 +305,6 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
               <option name="COLUMN_ORDER" />
             </State>
           </value>
@@ -391,6 +337,11 @@
           <line>394</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/Sources/hw07/mnist_digits_random_forest.py</url>
+          <line>120</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -410,23 +361,13 @@
     </watches-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/CS6600$hw02_f19.coverage" NAME="hw02_f19 Coverage Results" MODIFIED="1568505841263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw02" />
     <SUITE FILE_PATH="coverage/CS6600$mnist_convnet_1__1_.coverage" NAME="mnist_convnet_1 (1) Coverage Results" MODIFIED="1570581107799" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw06" />
-    <SUITE FILE_PATH="coverage/CS6600$cs5600_6600_f19_hw04.coverage" NAME="cs5600_6600_f19_hw04 Coverage Results" MODIFIED="1569684519058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw04" />
     <SUITE FILE_PATH="coverage/CS6600$test_mnist_convnets.coverage" NAME="test_mnist_convnets Coverage Results" MODIFIED="1570628356073" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw06" />
     <SUITE FILE_PATH="coverage/CS6600$cs5600_6600_f19_hw03.coverage" NAME="cs5600_6600_f19_hw03 Coverage Results" MODIFIED="1569295092210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw03" />
     <SUITE FILE_PATH="coverage/CS6600$mnist_convnet_1.coverage" NAME="mnist_convnet_1 Coverage Results" MODIFIED="1570580412410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw06/mnist_convnet" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Sources/hw06/test_mnist_convnets.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-          <folding>
-            <element signature="e#192#205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <SUITE FILE_PATH="coverage/CS6600$hw02_f19.coverage" NAME="hw02_f19 Coverage Results" MODIFIED="1568505841263" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw02" />
+    <SUITE FILE_PATH="coverage/CS6600$mnist_digits_random_forest.coverage" NAME="mnist_digits_random_forest Coverage Results" MODIFIED="1571196161793" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw07" />
+    <SUITE FILE_PATH="coverage/CS6600$cs5600_6600_f19_hw04.coverage" NAME="cs5600_6600_f19_hw04 Coverage Results" MODIFIED="1569684519058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw04" />
+    <SUITE FILE_PATH="coverage/CS6600$MCar.coverage" NAME="MCar Coverage Results" MODIFIED="1570817745861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw06" />
   </component>
 </project>
