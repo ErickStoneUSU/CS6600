@@ -14,7 +14,7 @@ def bee1():
     # valid = combine_and_merge('BEE1/bee_valid/', 'BEE1/no_bee_valid/')
     model = build_1()
     model.fit(list(train[0]), list(train[1]), show_metric=True, n_epoch=40)
-    print(model.evaluate(valid[0], valid[1]))
+    print(model.evaluate(list(valid[0]), list(valid[1])))
 
 
 def bee2():

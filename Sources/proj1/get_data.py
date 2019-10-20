@@ -19,5 +19,5 @@ def get_data(folder, label):
     ims = []
     for f in glob.glob('data/' + folder + '/**/*'):
         with Image.open(f.replace('\\', '/')) as im:
-            ims.append(np.array(list(im.getdata())).reshape((32,32,3)))
-    return ims, np.zeros(len(ims)) + label
+            ims.append(np.array(list(im.getdata())).reshape(3072))
+    return ims, np.zeros((len(ims), 2)) + label

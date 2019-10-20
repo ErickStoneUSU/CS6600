@@ -1,12 +1,13 @@
 import tflearn
-from tflearn import input_data, fully_connected, regression
+from tflearn import input_data, fully_connected, regression, max_pool_2d, reshape
 
 
 def components_1():
-    input_layer = input_data(shape=[None, 32, 32, 3])
-    fc_layer_1 = fully_connected(input_layer, 32, activation='relu', name='fc_layer_1')
-    fc_layer_2 = fully_connected(fc_layer_1, 32, activation='softmax', name='fc_layer_2')
-    fc_layer_3 = fully_connected(fc_layer_2, 3, activation='softmax', name='fc_layer_3')
+    input_layer = input_data(shape=[None, 1536, 2])
+    # rs_layer = reshape(input_layer, new_shape=[96, 32], name='reshape_1')
+    fc_layer_1 = fully_connected(input_layer, 256, activation='relu', name='fc_layer_1')
+    fc_layer_2 = fully_connected(fc_layer_1, 256, activation='relu', name='fc_layer_2')
+    fc_layer_3 = fully_connected(fc_layer_2, 64, activation='relu', name='fc_layer_3')
     return fc_layer_3
 
 
