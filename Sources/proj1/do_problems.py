@@ -11,10 +11,12 @@ from proj1.networks import build_1
 def bee1():
     train = combine_and_merge('BEE1/bee_train/', 'BEE1/no_bee_train/')
     # test = combine_and_merge('BEE1/bee_test/', 'BEE1/no_bee_test/')
-    # valid = combine_and_merge('BEE1/bee_valid/', 'BEE1/no_bee_valid/')
+    valid = combine_and_merge('BEE1/bee_valid/', 'BEE1/no_bee_valid/')
     model = build_1()
     model.fit(list(train[0]), list(train[1]), show_metric=True, n_epoch=40)
+
     print(model.evaluate(list(valid[0]), list(valid[1])))
+    model.save('bee1')
 
 
 def bee2():
