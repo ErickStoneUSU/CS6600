@@ -5,3 +5,6 @@ __pycache__
 *.npy
 *.wav
 .DS_Store
+out
+data
+.idea
