@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dea244da-8328-4cff-8cd1-8afe9606af83" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Sources/proj1/net_tester.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/proj1/do_problems.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/proj1/do_problems.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/proj1/get_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/proj1/get_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Sources/proj1/networks.py" beforeDir="false" afterPath="$PROJECT_DIR$/Sources/proj1/networks.py" afterDir="false" />
@@ -31,26 +33,17 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.43941718">
+    <splitter split-orientation="horizontal" split-proportion="0.41897234">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Sources/proj1/get_data.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="144">
-                  <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="21" />
+                <state relative-caret-position="251">
+                  <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
                   <folding>
                     <element signature="e#0#13#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/Sources/hw06/mnist_convnet_1.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="138">
-                  <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
                 </state>
               </provider>
             </entry>
@@ -58,24 +51,34 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Sources/proj1/do_problems.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="162">
-                  <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+                <state>
+                  <caret column="35" selection-start-column="35" selection-end-column="35" />
                   <folding>
-                    <element signature="e#0#13#0" expanded="true" />
+                    <element signature="e#545#1536#0" />
+                    <element signature="e#1287#1516#0" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/Sources/proj1/net_tester.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="110">
+                  <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Sources/proj1/networks.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="146">
-                  <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
+                <state relative-caret-position="322">
+                  <caret line="15" selection-start-line="15" selection-end-line="15" />
                   <folding>
                     <element signature="e#0#14#0" expanded="true" />
                   </folding>
@@ -108,17 +111,18 @@
       <list>
         <option value="$PROJECT_DIR$/Sources/proj1/read_file.py" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/Sources/proj1/networks.py" />
-        <option value="$PROJECT_DIR$/Sources/proj1/do_problems.py" />
         <option value="$PROJECT_DIR$/Sources/proj1/get_data.py" />
+        <option value="$PROJECT_DIR$/Sources/proj1/networks.py" />
+        <option value="$PROJECT_DIR$/Sources/proj1/net_tester.py" />
+        <option value="$PROJECT_DIR$/Sources/proj1/do_problems.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-1930" />
-    <option name="y" value="1326" />
-    <option name="width" value="1939" />
-    <option name="height" value="1169" />
+    <option name="x" value="-1929" />
+    <option name="y" value="1327" />
+    <option name="width" value="1938" />
+    <option name="height" value="1168" />
   </component>
   <component name="ProjectId" id="1QoLSatCXvIrnZuh8Zvw4XSvv8a" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -129,6 +133,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -145,27 +151,12 @@
               <item name="CS6600" type="b2602c69:ProjectViewProjectNode" />
               <item name="CS6600" type="462c0819:PsiDirectoryNode" />
               <item name="Sources" type="462c0819:PsiDirectoryNode" />
-              <item name="hw07" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CS6600" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS6600" type="462c0819:PsiDirectoryNode" />
-              <item name="Sources" type="462c0819:PsiDirectoryNode" />
               <item name="proj1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="CS6600" type="b2602c69:ProjectViewProjectNode" />
-              <item name="CS6600" type="462c0819:PsiDirectoryNode" />
-              <item name="Sources" type="462c0819:PsiDirectoryNode" />
-              <item name="proj1" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,9 +255,6 @@
       <module name="CS6600" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Sources/proj1" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -397,35 +385,36 @@
       <workItem from="1570997526919" duration="2667000" />
       <workItem from="1571186649329" duration="7459000" />
       <workItem from="1571369554008" duration="6879000" />
-      <workItem from="1571436354562" duration="35041000" />
+      <workItem from="1571436354562" duration="44403000" />
+      <workItem from="1571800460335" duration="10000" />
+      <workItem from="1572398891182" duration="24382000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41920000" />
+    <option name="totallyTimeSpent" value="75674000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1927" y="1329" width="1550" height="934" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1927" y="1329" width="1550" height="934" extended-state="7" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.12483221" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.32080537" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.38382542" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32991013" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49932885" visible="true" weight="0.38382542" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Dilbert" order="7" weight="0.6572529" />
       <window_info anchor="bottom" id="SBT Console" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32991013" />
       <window_info anchor="bottom" id="Docker" order="10" />
       <window_info anchor="bottom" id="Dependency Graph" order="11" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.50067115" side_tool="true" weight="0.38382542" />
       <window_info anchor="bottom" id="RNConsole" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="14" />
       <window_info anchor="bottom" id="Version Control" order="15" />
@@ -493,14 +482,14 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Sources/proj1/do_problems.py</url>
-          <line>17</line>
-          <option name="timeStamp" value="49" />
+          <url>file://$PROJECT_DIR$/Sources/proj1/networks.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Sources/proj1/get_data.py</url>
-          <line>12</line>
-          <option name="timeStamp" value="50" />
+          <url>file://$PROJECT_DIR$/Sources/proj1/do_problems.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
@@ -531,7 +520,7 @@
     <SUITE FILE_PATH="coverage/CS6600$get_data.coverage" NAME="get_data Coverage Results" MODIFIED="1571458685649" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/proj1" />
     <SUITE FILE_PATH="coverage/CS6600$cs5600_6600_f19_hw03.coverage" NAME="cs5600_6600_f19_hw03 Coverage Results" MODIFIED="1569295092210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw03" />
     <SUITE FILE_PATH="coverage/CS6600$mnist_convnet_1.coverage" NAME="mnist_convnet_1 Coverage Results" MODIFIED="1570580412410" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/hw06/mnist_convnet" />
-    <SUITE FILE_PATH="coverage/CS6600$do_problems.coverage" NAME="do_problems Coverage Results" MODIFIED="1571615973246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/proj1" />
+    <SUITE FILE_PATH="coverage/CS6600$do_problems.coverage" NAME="do_problems Coverage Results" MODIFIED="1572466660580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Sources/proj1" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateCodeFragment">
@@ -595,47 +584,47 @@
     </expressions>
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>np.array(e)</expression-string>
+        <expression-string>grey</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>e</expression-string>
+        <expression-string>np.nan(float(grey))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>e[1]</expression-string>
+        <expression-string>np.nan(grey)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>e[0]</expression-string>
+        <expression-string>cv2.imshow(grey)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>np.array(e).T</expression-string>
+        <expression-string>grey.resize((l, l), refcheck=False)</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>e.T</expression-string>
+        <expression-string>grey.resize((l, l))</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>model.evaluate(list(valid[0]), list(valid[1]))</expression-string>
+        <expression-string>l</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>model.evaluate(list(valid[0]), valid[1])</expression-string>
+        <expression-string>glob.glob('data/' + folder_none + '/**/*')</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>list(valid[1])</expression-string>
+        <expression-string>y</expression-string>
         <language-id>Python</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -688,23 +677,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/hw06/mnist_convnet_1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Sources/proj1/networks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="146">
-          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/threading.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="12">
@@ -712,36 +684,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/hw06/test_mnist_convnets.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="126" lean-forward="true" selection-start-line="126" selection-end-line="126" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/hw06/mnist_convnet_1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="53" lean-forward="true" selection-start-line="13" selection-start-column="53" selection-end-line="13" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/tensorflow/python/framework/dtypes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="524" selection-start-line="524" selection-end-line="524" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/tensorflow/python/eager/execute.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="150" selection-start-line="150" selection-end-line="150" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/tflearn/data_flow.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        <state relative-caret-position="151">
+          <caret line="221" selection-start-line="221" selection-end-line="221" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/tflearn/utils.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="179" selection-start-line="179" selection-end-line="179" />
+        <state relative-caret-position="151">
+          <caret line="186" selection-start-line="186" selection-end-line="186" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/tflearn/layers/estimator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/site-packages/numpy/core/_asarray.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="84" selection-start-line="84" selection-end-line="84" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Sources/proj1/get_data.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="21" />
+        <state relative-caret-position="251">
+          <caret line="18" column="43" lean-forward="true" selection-start-line="18" selection-start-column="43" selection-end-line="18" selection-end-column="43" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/proj1/net_tester.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="10" lean-forward="true" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Sources/proj1/do_problems.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="17" column="35" lean-forward="true" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+        <state>
+          <caret column="35" selection-start-column="35" selection-end-column="35" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#545#1536#0" />
+            <element signature="e#1287#1516#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sources/proj1/networks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -1,16 +1,30 @@
 import tflearn
-from tflearn import input_data, fully_connected, regression, max_pool_2d, reshape
+from tflearn import input_data, fully_connected, regression
 
 
 def components_1():
-    input_layer = input_data(shape=[None, 3072])
-    # rs_layer = reshape(input_layer, new_shape=[96, 32], name='reshape_1')
-    fc_layer_1 = fully_connected(input_layer, 128, activation='relu', name='fc_layer_1')
-    fc_layer_2 = fully_connected(fc_layer_1, 1, activation='relu', name='fc_layer_1')
-    return fc_layer_2
+    net = input_data(shape=[None, 1024])
+    net = fully_connected(net, 64, activation='sigmoid')
+    net = fully_connected(net, 64, activation='sigmoid')
+    net = fully_connected(net, 1, activation='sigmoid')
+    return net
 
 
 def build_1():
-    network = regression(components_1(), optimizer='sgd', loss='categorical_crossentropy', learning_rate=0.01)
+    network = regression(components_1(), optimizer='sgd', metric='R2', loss='mean_square', learning_rate=0.5)
+    model = tflearn.DNN(network)
+    return model
+
+
+def components_2(dim):
+    net = input_data(shape=[None, dim])
+    net = fully_connected(net, 256, activation='sigmoid')
+    net = fully_connected(net, 256, activation='sigmoid')
+    net = fully_connected(net, 1, activation='sigmoid')
+    return net
+
+
+def build_2(dim):
+    network = regression(components_2(dim), optimizer='sgd', metric='R2', loss='mean_square', learning_rate=0.1)
     model = tflearn.DNN(network)
     return model
