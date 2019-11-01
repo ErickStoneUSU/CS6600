@@ -3,7 +3,7 @@
  * Comment:
  * I noticed that the initial values seemed to never finish.
  * So, I reduced the population size and the max length.
- * This never reached a successful state, so I deided I needed
+ * This never reached a successful state, so I decided I needed
  * to be a little smarter about it. So, I looked up a polynomial
  * approximation for sin and found that sin(at) ~= -(a+1)t^a + at.
  * x in this case must first utilize t = 1- x^2 / 2*a^(2i).
@@ -16,6 +16,7 @@
  * One last thing, I increaased the depth as the operations require
  * at least a little more depth then a single layer can handle. This
  * also improved the fit.
+ * My best score was 0.183.
  */
 package tinygp;
 
@@ -49,14 +50,14 @@ public class tiny_gp {
   static long seed;
   static double avg_len; 
   static final int  
-    MAX_LEN = 3000,
+    MAX_LEN = 4000,
     POPSIZE = 3000,
-    DEPTH   = 55,
-    GENERATIONS = 100,
+    DEPTH   = 5,
+    GENERATIONS = 1000,
     TSIZE = 5;
   public static final double  
-    PMUT_PER_NODE  = 0.01,
-    CROSSOVER_PROB = 0.9;
+    PMUT_PER_NODE  = 0.99,
+    CROSSOVER_PROB = 0.7;
   static double [][] targets;
 
   double run() { /* Interpreter */
@@ -236,7 +237,7 @@ public class tiny_gp {
     return( pop );
   }
 
-  void stats( double [] fitness, char [][] pop, int gen ) {
+  void stats( double [] fitness, char [][] pop, int gen )  throws Exception {
     int i, best = rd.nextInt(POPSIZE);
     int node_count = 0;
     fbestpop = fitness[best];
@@ -255,6 +256,9 @@ public class tiny_gp {
     System.out.print("Generation="+gen+" Avg Fitness="+(-favgpop)+
     		 " Best Fitness="+(-fbestpop)+" Avg Size="+avg_len+
     		 "\nBest Individual: ");
+    if (gen == 21 && (-fbestpop) > 2){
+      throw new Exception();
+    }
 //    print_indiv( pop[best], 0 );
     System.out.print( "\n");
     System.out.flush();
@@ -365,7 +369,7 @@ public class tiny_gp {
     pop = create_random_pop(POPSIZE, DEPTH, fitness );
   }
 
-  void evolve() {
+  void evolve() throws Exception {
     int gen = 0, indivs, offspring, parent1, parent2, parent;
     double newfit;
     char []newind;
@@ -394,7 +398,8 @@ public class tiny_gp {
       stats( fitness, pop, gen );
     }
     System.out.print("PROBLEM *NOT* SOLVED\n");
-    System.exit( 1 );
+    throw new Exception();
+//    System.exit( 1 );
   }
 
   public static void main(String[] args) {
@@ -410,7 +415,14 @@ public class tiny_gp {
     }
     
     tiny_gp gp = new tiny_gp(fname, s);
-    gp.evolve();
+    while(true) {
+      try {
+        gp.evolve();
+      } catch (Exception e) {
+        System.gc();
+        System.runFinalization();
+      }
+    }
   }
 }
 
