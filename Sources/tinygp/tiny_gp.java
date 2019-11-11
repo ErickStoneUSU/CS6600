@@ -16,7 +16,7 @@
  * One last thing, I increaased the depth as the operations require
  * at least a little more depth then a single layer can handle. This
  * also improved the fit.
- * My best score was 0.183.
+ * My best score was 0.181.
  */
 package tinygp;
 
