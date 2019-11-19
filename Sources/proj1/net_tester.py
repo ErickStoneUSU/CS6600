@@ -120,13 +120,11 @@ def load(ann_file_path):
     return model
 
 
-ann = load('ann_images')
+ann = load('conv_images')
 print(fit_image_ann(ann, 'C:\\Users\\erick\\OneDrive\\Desktop\\CS6600\\Sources\\proj1\\data\\two_super\\testing\\bee\\0\\9.png'))
 
+# ann = load('ann_images')
+# print(fit_image_ann(ann, 'C:\\Users\\erick\\OneDrive\\Desktop\\CS6600\\Sources\\proj1\\data\\two_super\\testing\\bee\\0\\9.png'))
+
 # ann = load('buzz_ann')
-# print(fit_audio_ann(ann, 'C:\\Users\\erick\\OneDrive\\Desktop\\CS6600\\Sources\\proj1\\data\\BUZZ1\\bee\\bee1_192_168_4_6-2017-08-01_11-45-01.wav'))
-# ann = load('bee1')
-# fit_image_ann(ann, 'yes_bee.png')
-#
-# ann2 = load('BUZZ_ANN.pck')
-# fit_audio_ann(ann, 'audio_1.wav')
+# print(fit_audio_ann(ann, 'C:\\Projects\\CS6600\\Sources\\proj1\\data\\BUZZ1\\noise\\noise1_192_168_4_9-2017-07-24_16-00-01.wav'))
