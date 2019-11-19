@@ -11,3 +11,7 @@ data
 .idea/misc.xml
 .idea/workspace.xml
 .idea
+*.pck
+*.xml
+*.csv
+mammo.csv
