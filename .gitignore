@@ -7,11 +7,6 @@ __pycache__
 .DS_Store
 out
 data
-.idea
-.idea/misc.xml
-.idea/workspace.xml
-.idea
 *.pck
 *.xml
 *.csv
-mammo.csv

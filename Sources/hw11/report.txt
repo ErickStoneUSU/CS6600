@@ -1,0 +1,26 @@
+Problem 1: Article Summary:
+
+The paper analyzes GPS to simulate human thought for problem solving.
+GPS maximally merges the concepts of machines copying humans and machines solving problems that humans solve.
+It begins by illustrating the history of theoretical mind models.
+They then performed an experiment in which an engineering student solving a problem.
+The steps, and thought processes conveyed in text where converted into protocol for a generic solver.
+GPS essentially repeatedly performs 1 of 3 tasks:
+1.Transform A to B
+- If doable
+2.Reduce difference D between A and B
+- This is the difference between finishing a goal and what is present
+3.Apply operator Q to A
+- Conditions for operator must be met first
+
+GPS sets up subgoals to reach major goals. There is also a step to see if a goal can feasibly be reached.
+They then analyze the conversation and problem solving of the test subject.
+In this, they find many similarities between GPS and the human interaction,
+they did however find a few key differences.
+It is interesting to note that the subject perceived his
+inward thoughts as being separate from the external thoughts which GPS could not handle.
+Second, the subject narrows the search space to the specific problem.
+Third, hind sight is not present in GPS, but was displayed by the test subject.
+The ability to utilize degrees of freedom seems lost to GPS.
+The author concludes essentially that these items will need to be addressed and that one subject in one experiment
+may be insufficient to derive these idiosyncrasies.
