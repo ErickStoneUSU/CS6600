@@ -14,14 +14,20 @@ random.seed(1)
 
 
 # save() function to save the trained network to a file
-def save(ann, file_name):
-    with open(file_name, 'wb') as fp:
+def save(ann, file_name, with_birad):
+    dir = 'pickles_noBirad/'
+    if with_birad:
+        dir = 'pickles_withBirad/'
+    with open(dir + file_name, 'wb') as fp:
         pickle.dump(ann, fp)
 
 
 # restore() function to restore the file
-def load(file_name):
-    with open(file_name, 'rb') as fp:
+def load(file_name, with_birad):
+    dir = 'pickles_noBirad/'
+    if with_birad:
+        dir = 'pickles_withBirad/'
+    with open(dir + file_name, 'rb') as fp:
         nn = pickle.load(fp)
     return nn
 
@@ -71,12 +77,11 @@ def display_data():
 
 
 # reusable method to do fit, evaluate, and cross over validation
-def train_mod(mod, x, y, filename, do_save=True):
+def train_mod(mod, x, y, filename, with_birad):
     score = cross_val_score(mod, x, y, cv=200)
     mod.fit(x, y)
     print(sum(score) / len(score))
-    if do_save:
-        save(mod, filename)
+    save(mod, filename, with_birad)
 
 
 def train(with_birad):
@@ -97,37 +102,35 @@ def train(with_birad):
         ('forest', forest_m)
     ])
 
-    train_mod(logreg_m, x_train, y_train, 'logreg.pck')
-    train_mod(svm_m, x_train, y_train, 'svm.pck')
-    train_mod(tree_m, x_train, y_train, 'tree.pck')
-    train_mod(forest_m, x_train, y_train, 'forest.pck')
-    train_mod(vote_m, x_train, y_train, 'vote.pck')
+    train_mod(logreg_m, x_train, y_train, 'logreg.pck', with_birad)
+    train_mod(svm_m, x_train, y_train, 'svm.pck', with_birad)
+    train_mod(tree_m, x_train, y_train, 'tree.pck', with_birad)
+    train_mod(forest_m, x_train, y_train, 'forest.pck', with_birad)
+    train_mod(vote_m, x_train, y_train, 'vote.pck', with_birad)
     print("Training Completed:")
 
 
 # secondary method for model validation
-def validate_mod(pck_name, x, y):
-    mod = load(pck_name)
+def validate_mod(pck_name, x, y, with_birad):
+    mod = load(pck_name, with_birad)
     preds = mod.predict(x)
     print(sum(preds == y.values) / len(y))
-    plt.scatter(x.values, preds.reshape(-1,1))
-    plt.show()
 
 
 # validate each model with validation data
 def validate(with_birad):
     print("Beginning Validation: ")
     x_train, x_test, y_train, y_test = get_data(with_birad)
-    validate_mod('logreg.pck', x_test, y_test)
-    validate_mod('svm.pck', x_test, y_test)
-    validate_mod('tree.pck', x_test, y_test)
-    validate_mod('forest.pck', x_test, y_test)
-    validate_mod('vote.pck', x_test, y_test)
+    validate_mod('logreg.pck', x_test, y_test, with_birad)
+    validate_mod('svm.pck', x_test, y_test, with_birad)
+    validate_mod('tree.pck', x_test, y_test, with_birad)
+    validate_mod('forest.pck', x_test, y_test, with_birad)
+    validate_mod('vote.pck', x_test, y_test, with_birad)
     print("Validation Completed:")
 
 
-use_birad = True
+use_birad = False
 # NOTE: only train or validate, not at the same time
 # display_data()
-# train(use_birad)
+train(use_birad)
 validate(use_birad)
