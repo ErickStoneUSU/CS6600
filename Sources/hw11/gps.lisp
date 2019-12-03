@@ -1,4 +1,10 @@
 #|
+
+Plan found by GPS:
+((START) (EXECUTE DROP-BALL) (EXECUTE MOVE-CHAIR) (EXECUTE CLIMB-ON-CHAIR) (EXECUTE REACH-BANANAS)
+ (EXECUTE GRASP-BANANAS) (EXECUTE EAT-BANANAS))
+
+
 ==================================================
 -*- Mode: Lisp; Syntax: Common-Lisp; -*-
 Module: gps.lisp: a lisp implementation of

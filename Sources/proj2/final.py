@@ -1,5 +1,5 @@
 import pickle
-
+import random
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -8,6 +8,9 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.model_selection import train_test_split, cross_val_score
 from sklearn import svm
 from sklearn.tree import DecisionTreeClassifier
+
+
+random.seed(1)
 
 
 # save() function to save the trained network to a file
@@ -25,17 +28,23 @@ def load(file_name):
 
 def get_data(with_birad=True):
     data = pd.read_csv('mammo_filtered.csv', header=0, dtype=float)
+
+    # split out label
     y = data.Severity
     data = data.drop(columns=['Severity'])
+
+    # removing the professional opinion for a more pure dataset
     if not with_birad:
         # TODO test without the "professional" recommendation
         data = data.drop(columns=['BIRADS'])
+
     x_train, x_test, y_train, y_test = train_test_split(data, y, test_size=0.2, random_state=1)
     return x_train, x_test, y_train, y_test
 
 
 def display_data():
-    data = get_data()
+    # how are the features distributed?
+    data = get_data(with_birad=True)
     sns.countplot(x='BIRADS', data=data)
     plt.title('BIRADS - Professional Assessment Score:1=benign,5=malignant')
     plt.show()
@@ -61,7 +70,8 @@ def display_data():
     plt.show()
 
 
-def train_mod(mod, x, y, filename, do_save=False):
+# reusable method to do fit, evaluate, and cross over validation
+def train_mod(mod, x, y, filename, do_save=True):
     score = cross_val_score(mod, x, y, cv=200)
     mod.fit(x, y)
     print(sum(score) / len(score))
@@ -69,12 +79,17 @@ def train_mod(mod, x, y, filename, do_save=False):
         save(mod, filename)
 
 
-def train():
-    x_train, x_test, y_train, y_test = get_data()
+def train(with_birad):
+    print("Beginning Training: ")
+    x_train, x_test, y_train, y_test = get_data(with_birad)
+
+    # train on several different models
     logreg_m = LogisticRegression(C=1e5, solver='lbfgs', multi_class='warn')  # 82.125
     svm_m = svm.SVC(C=0.5, kernel='linear')  # 82.83
     tree_m = DecisionTreeClassifier(criterion='entropy', max_depth=4, min_samples_leaf=3)  # 84.20
-    forest_m = RandomForestClassifier(n_estimators=1000, criterion='entropy', max_depth=4, min_samples_leaf=3)  # 84.08
+    forest_m = RandomForestClassifier(n_estimators=200, criterion='entropy', max_depth=4, min_samples_leaf=3)  # 84.08
+
+    # this is an ensemble
     vote_m = VotingClassifier(estimators=[
         ('lr', logreg_m),
         ('svm', svm_m),
@@ -87,27 +102,32 @@ def train():
     train_mod(tree_m, x_train, y_train, 'tree.pck')
     train_mod(forest_m, x_train, y_train, 'forest.pck')
     train_mod(vote_m, x_train, y_train, 'vote.pck')
+    print("Training Completed:")
 
 
+# secondary method for model validation
 def validate_mod(pck_name, x, y):
     mod = load(pck_name)
     preds = mod.predict(x)
     print(sum(preds == y.values) / len(y))
-    display_predicted(x, preds)
+    plt.scatter(x.values, preds.reshape(-1,1))
+    plt.show()
 
 
-def validate():
-    x_train, x_test, y_train, y_test = get_data(with_birad=True)
+# validate each model with validation data
+def validate(with_birad):
+    print("Beginning Validation: ")
+    x_train, x_test, y_train, y_test = get_data(with_birad)
     validate_mod('logreg.pck', x_test, y_test)
     validate_mod('svm.pck', x_test, y_test)
     validate_mod('tree.pck', x_test, y_test)
     validate_mod('forest.pck', x_test, y_test)
     validate_mod('vote.pck', x_test, y_test)
+    print("Validation Completed:")
 
 
-def display_predicted(x, preds):
-    plt.scatter(x, preds)
-    plt.show()
-
-
-validate()
+use_birad = True
+# NOTE: only train or validate, not at the same time
+# display_data()
+# train(use_birad)
+validate(use_birad)
