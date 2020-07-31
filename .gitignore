@@ -10,3 +10,10 @@ data
 *.pck
 *.xml
 *.csv
+.idea/misc.xml
+.idea/workspace.xml
+Sources/proj1/net_tester.zip
+*.data-00000-of-00001
+*.index
+*.meta
+Sources/proj1/checkpoint
